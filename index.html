@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Benjamin Jedar</title>
+    <script src="https://kit.fontawesome.com/0e1489d9e9.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 <body>
     <header>
         <p id="header_nom">Benjamin Jedar</p>
         <nav>
-            <li><a href="#presentation">A propos</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#portfolio">Portefolio</a></li>
+            <li class="li_nav"><a href="#accueil" class="link_nav">Accueil</a></li>
+            <li class="li_nav"><a href="#a_propos" class="link_nav">A propos</a></li>
+            <li class="li_nav"><a href="#competences" class="link_nav">Compétences</a></li>
+            <li class="li_nav"><a href="#experience" class="link_nav">Expérience</a></li>
+            <li class="li_nav"><a href="#contact" class="link_nav">Contact</a></li>
         </nav>
     </header>
     <div id="main">
-        <h1 id="titre">DEVELOPPEUR FRONTEND</h1>
-        <section id="presentation">
+        <section id="accueil">
+            <div id="title">
+                <h1 id="title_h1"><span>B</span><span>E</span><span>N</span><span>J</span><span>A</span><span>M</span><span>I</span><span>N</span> <span>J</span><span>E</span><span>D</span><span>A</span><span>R</span></h1>
+                <h2 id="title_h2">DEVELOPPEUR FRONTEND</h2>
+            </div>
             <div id="image_de_couverture">
                 <img src="assets/Photo_Profile_Benjamin.JPG" alt="Photo de moi bg le type" id="photo_profile">
             </div>
+        </section>
+
+        <section id="a_propos">
             <div id="paragraphe_de_presentation">
                 J'ASPIRE À LA CRÉATION
                 D'EXPÉRIENCES À TRAVERS LA CONCEPTION D'INTERFACES
@@ -46,14 +55,22 @@
                 <li class="techno">Sass</li>
                 <li class="techno">ReactJs</li>
             </ul>
-        <section id="portfolio">
-            <p> Intérréssé par mes réalisation ? N'héssitez pas à découvrir mes créations en cliquant sur <a href="https://github.com/BenjaminJedar" title="Tu va pas en croire tes yeux ! O.O" target="_blank">mon lien Github</a> !</p>
+        </section>
+
+        <section id="experience">
+            <h2>Projets</h2>
+            <a href="#"><div id="carte_experience">Ana Yoga</div></a>
+            <p> Intérréssé par mes réalisation ? N'héssitez pas à découvrir mes créations en cliquant sur <a href="https://github.com/BenjaminJedar/Benjamin_Jedar" title="Tu va pas en croire tes yeux ! O.O" target="_blank">mon lien Github</a> !</p>
+        </section>
+
+        <section id="contact">
+            <h3>Collaborons ensemble !</h3>
+            <a href="https://www.linkedin.com/in/benjamin-jedar/" target="_blank" id="logo_linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:benjaminjedar-developpeur@hotmail.fr" id="logo_mail"><i class="fa-sharp fa-solid fa-envelope"></i></a>
         </section>
     </div>
     <footer>
-        <h3>Collaborons ensemble !</h3>
-        <button id="bouton_de_theme">Changer de thême</button>
+        <p id="copyright"><i class="fa-regular fa-copyright"></i> Copyright 2023 - Benjamin Jedar</p>
     </footer>
-    
 </body>
 </html>

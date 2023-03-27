@@ -1,20 +1,29 @@
+/*======================BODY============================*/
 body {
     background-color: rgb(62, 45, 45);
+    font-size: 20px;
 }
+
 a {
-    color: rgb(214, 214, 214);
     text-decoration: none;
-}
-a:hover {
     color: black;
 }
 
+/*========================HEADER=======================*/
+
+.link_nav {
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+}
+.link_nav:hover {
+    color: black;
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(180, 123, 99);
+    background-color: rgba(180, 123, 99, 0.585);
     border: 2px solide rgb(180, 123, 99);
     height: 100px;
     color: rgb(214, 214, 214)
@@ -24,6 +33,13 @@ header {
     font-weight: bold;
     font-size: 30px;
     margin-left: 20px;
+    transition: all 500ms ease-in-out;
+}
+
+#header_nom:hover {
+    color: rgb(93, 43, 9);
+    font-size: 40px;
+    /*text-shadow: black 5px 5px 5px;*/
 }
 
 ul, nav {
@@ -35,20 +51,64 @@ li {
     margin-right: 20px;
 }
 
-#titre {
+.li_nav {
+    transition: transform 150ms ease-in;
+}
+
+.li_nav:hover {
+    transform: rotate(20deg);
+}
+/*======================SECTION ACCUEIL================*/
+#accueil {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(171, 171, 171);
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#title_h1 {
+    margin-bottom: 0px;
     font-size: 60px;
 }
 
-
-p {
-    font-size: 12px;
+#title_h1:hover {
+    cursor: default;
 }
- 
+
+#title_h2 {
+    margin-top: 0px;
+}
+
+#image_de_couverture {
+    margin-right: 200px;
+}
 
 #photo_profile {
     height: 500px;
     border-radius: 500px;
 }
+
+span {
+    transition: all 200ms ease-in-out;
+}
+span:hover {
+    font-weight: bold;
+    color: brown;
+    transform: rotate(20deg);
+}
+
+
+/*======================SECTION A PROPOS================*/
+
+#paragraphe_de_presentation {
+    font-size: 30px;
+    width: 500px;
+    align-self: center;
+    align-items: center;
+}
+
+/*======================SECTION COMPETENCE================*/
 
 .techno {
     border: 1px solid black;
@@ -60,18 +120,50 @@ p {
     background-color: rgb(213, 213, 213);
 }
 
-#presentation {
-    display: flex;
-    color: rgb(171, 171, 171);
+/*======================SECTION EXPERIENCE================*/
+
+#carte_experience {
+    background-color: rgba(41, 77, 41, 0.777);
+    height: 250px;
+    width: 250px;
+    border: 2px solid grey;
+}
+/*======================SECTION CONTACT================*/
+
+
+#logo_linkedin {
+    text-decoration: none;
 }
 
 
-#paragraphe_de_presentation {
-    font-size: 30px;
-    width: 500px;
-    align-self: center;
-    align-items: center;
+/*======================FOOTER================*/
+
+#copyright {
+    text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 
