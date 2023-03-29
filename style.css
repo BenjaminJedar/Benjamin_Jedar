@@ -1,7 +1,22 @@
 /*======================BODY============================*/
 body {
-    background-color: rgb(62, 45, 45);
+    background: linear-gradient(rgb(62, 45, 45), rgb(95, 55, 13)) ;
     font-size: 20px;
+    height: 100%;
+    width: 100%;
+    margin-left: auto; 
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative; 
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-left: 20px;
 }
 
 a {
@@ -14,33 +29,30 @@ a {
 .link_nav {
     color: rgb(214, 214, 214);
     text-decoration: none;
+    transition: color ease-in-out 150ms;
 }
 .link_nav:hover {
     color: black;
 }
 
 header {
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(180, 123, 99, 0.585);
+    background-color: rgba(180, 123, 99, 0.078);
     border: 2px solide rgb(180, 123, 99);
     height: 100px;
     color: rgb(214, 214, 214)
 }
 
 #header_nom {
+    color: black;
     font-weight: bold;
     font-size: 30px;
     margin-left: 20px;
-    transition: all 500ms ease-in-out;
 }
 
-#header_nom:hover {
-    color: rgb(93, 43, 9);
-    font-size: 40px;
-    /*text-shadow: black 5px 5px 5px;*/
-}
 
 ul, nav {
     list-style-type: none;
@@ -51,13 +63,6 @@ li {
     margin-right: 20px;
 }
 
-.li_nav {
-    transition: transform 150ms ease-in;
-}
-
-.li_nav:hover {
-    transform: rotate(20deg);
-}
 /*======================SECTION ACCUEIL================*/
 #accueil {
     display: flex;
@@ -101,12 +106,22 @@ span:hover {
 
 /*======================SECTION A PROPOS================*/
 
-#paragraphe_de_presentation {
-    font-size: 30px;
-    width: 500px;
-    align-self: center;
-    align-items: center;
+#a_propos {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
+
+#paragraphe_de_presentation {
+    display: flex;
+    margin-left: 30px;
+    font-size: 30px;
+    height: 500px;
+    align-items: center;
+ }
 
 /*======================SECTION COMPETENCE================*/
 
