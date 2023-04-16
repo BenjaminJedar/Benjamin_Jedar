@@ -4,44 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Benjamin Jedar</title>
+    <title>Benjamin Jedar | Developpeur Web Frontend</title>
     <script src="https://kit.fontawesome.com/0e1489d9e9.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <p id="header_nom">Benjamin Jedar</p>
+        <a href="#accueil" class="link_nav"><p class="initiales">BJ</p></a>
         <nav>
-            <li class="li_nav"><a href="#accueil" class="link_nav">Accueil</a></li>
-            <li class="li_nav"><a href="#a_propos" class="link_nav">A propos</a></li>
-            <li class="li_nav"><a href="#competences" class="link_nav">Compétences</a></li>
-            <li class="li_nav"><a href="#experience" class="link_nav">Expérience</a></li>
+            <li class="li_nav"><a href="a_propos.html" target="_blank" class="link_nav">A propos</a></li>
+            <li class="li_nav"><a href="#competence" class="link_nav">Compétences</a></li>
+            <li class="li_nav"><a href="#projets" class="link_nav">Expérience</a></li>
             <li class="li_nav"><a href="#contact" class="link_nav">Contact</a></li>
         </nav>
     </header>
     <div id="main">
-        <section id="accueil">
-            <div id="title">
-                <h1 id="title_h1"><span>B</span><span>E</span><span>N</span><span>J</span><span>A</span><span>M</span><span>I</span><span>N</span> <span>J</span><span>E</span><span>D</span><span>A</span><span>R</span></h1>
-                <h2 id="title_h2">DEVELOPPEUR FRONTEND</h2>
+        <section id="accueil" class="section section1"> 
+            <div class="presentation">
+                <div class="title">
+                    <h1 class="title_h1"><span>B</span><span>E</span><span>N</span><span>J</span><span>A</span><span>M</span><span>I</span><span>N</span> <span>J</span><span>E</span><span>D</span><span>A</span><span>R</span></h1>
+                    <h2 class="title_h2">DEVELOPPEUR FRONTEND</h2>
+                </div>  
+                <div id="paragraphe_de_presentation">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar mattis. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Vitae aliquet nec ullamcorper sit amet. Consectetur a erat nam at lectus urna.
+                </div>                                                                                                                 
             </div>
             <div id="image_de_couverture">
-                <img src="assets/Photo_Profile_Benjamin.JPG" alt="Photo de moi bg le type" id="photo_profile">
+                <img src="assets/Photo_Profile_Benjamin.JPG" alt="Photo de Benjamin Jedar" id="photo_profile">
             </div>
         </section>
 
-        <section id="a_propos">
-            <div id="paragraphe_de_presentation">
-                J'ASPIRE À LA CRÉATION
-                D'EXPÉRIENCES À TRAVERS LA CONCEPTION D'INTERFACES
-                    ERGONOMIQUES ET MODERNES. TOUJOURS PRÊT À RELEVER
-                    DE NOUVEAUX DÉFIS, JE METTRAI TOUTE MA CRÉATIVITÉ ET
-                    MON EXPÉRIENCE AU SERVICE DE VOS PROJETS.                                                                                                                   
-            </div>
+        <section id="a_propos" class="section section2">
+            <h2>Je me présente ...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar mattis. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Vitae aliquet nec ullamcorper sit amet. Consectetur a erat nam at lectus urna. Hac habitasse platea dictumst vestibulum rhoncus. Diam maecenas ultricies mi eget. Feugiat in ante metus dictum at tempor. 
+                
+            Ut faucibus pulvinar elementum integer enim. Gravida arcu ac tortor dignissim convallis aenean. Semper eget duis at tellus at urna condimentum. Sagittis purus sit amet volutpat consequat mauris nunc congue. Purus sit amet volutpat consequat mauris nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Ut placerat orci nulla pellentesque dignissim enim sit. Ac turpis egestas sed tempus. Adipiscing vitae proin sagittis nisl rhoncus mattis <br> 
+            ...    
+            </p>
+            <a href="a_propos.html" target="_blank"><button>Je veux en savoir plus !</button></a> 
+            <img src="assets/montagne.png" alt="Dessin de montagnes" id="montagnes">
         </section>
 
-        <section id="competences">
+        <section id="competence" class="section section3">
             <h2>Les téchnologies que je maitrise</h2>
             <ul>
                 <li class="techno">HTML</li>
@@ -57,19 +65,20 @@
             </ul>
         </section>
 
-        <section id="experience">
+        <section id="projets" class="section section4">
             <h2>Projets</h2>
             <a href="#"><div id="carte_experience">Ana Yoga</div></a>
-            <p> Intérréssé par mes réalisation ? N'héssitez pas à découvrir mes créations en cliquant sur <a href="https://github.com/BenjaminJedar/Benjamin_Jedar" title="Tu va pas en croire tes yeux ! O.O" target="_blank">mon lien Github</a> !</p>
+            <p> Viens voir <a href="https://github.com/BenjaminJedar/Benjamin_Jedar" title="Tu va pas en croire tes yeux ! O.O" target="_blank">mon lien Github</a> !</p>
         </section>
 
-        <section id="contact">
+        <section id="contact" class=" section section5">
             <h3>Collaborons ensemble !</h3>
             <a href="https://www.linkedin.com/in/benjamin-jedar/" target="_blank" id="logo_linkedin"><i class="fa-brands fa-linkedin"></i></a>
             <a href="mailto:benjaminjedar-developpeur@hotmail.fr" id="logo_mail"><i class="fa-sharp fa-solid fa-envelope"></i></a>
         </section>
     </div>
     <footer>
+        <a href="#accueil"><p class="initiales initiales_footer">BJ</p></a> 
         <p id="copyright"><i class="fa-regular fa-copyright"></i> Copyright 2023 - Benjamin Jedar</p>
     </footer>
 </body>
