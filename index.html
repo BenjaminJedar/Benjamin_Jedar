@@ -127,7 +127,24 @@
 
         <section id="contact" class=" section section5">
             <h2>Collaborons ensemble <i class="fa-regular fa-handshake" id="poignee"></i></h3>
-            <p>Envoyez moi un mail pour un premier contact et qu'on discute de votre super projet ou visitez mon profil LinkedIn !</p>   
+            <p>Envoyez moi un mail pour un premier contact et qu'on discute de votre super projet ou visitez mon profil LinkedIn !</p>  
+            <div class="formulaire">
+                <form action="/ma-page-de-traitement" method="post">
+                    <div>
+                        <input type="text" id="name" name="user_name" placeholder="Votre nom">
+                    </div>
+                    <div>
+                        <input type="email" id="mail" name="user_mail" placeholder="email">
+                    </div>
+                    <div>
+                        <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <button class="bouton bouton_envoyer">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+
             <div>
                 <a href="mailto:benjaminjedar-developpeur@hotmail.fr" id="logo_mail"><i class="fa-sharp fa-solid fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/benjamin-jedar/" target="_blank" id="logo_linkedin"><i class="fa-brands fa-linkedin"></i></a> 

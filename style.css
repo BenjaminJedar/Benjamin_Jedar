@@ -370,7 +370,6 @@ span:hover {
     height: 200px;
     border-radius: 30px;
     padding: 0;
-    box-shadow: 2px 2px 10px black;
 }
 
 .section4 p{
@@ -389,6 +388,24 @@ span:hover {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 500px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+.bouton_envoyer {
+    padding: 0px 20px;
 }
 
 .section5 a{
