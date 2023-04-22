@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Benjamin Jedar | Developpeur Web Frontend</title>
     <script src="https://kit.fontawesome.com/0e1489d9e9.js" crossorigin="anonymous"></script>
@@ -14,9 +14,9 @@
 </head>
 <body>
     <header>
-        <a href="#accueil" class="link_nav"><p class="initiales">BJ</p></a>
+        <a href="#main" class="link_nav"><p class="initiales">BJ</p></a>
         <nav>
-            <li class="li_nav"><a href="a_propos.html" target="_blank" class="link_nav">A propos</a></li>
+            <li class="li_nav"><a href="#a_propos" class="link_nav">A propos</a></li>
             <li class="li_nav"><a href="#competence" class="link_nav">Compétences</a></li>
             <li class="li_nav"><a href="#projets" class="link_nav">Expérience</a></li>
             <li class="li_nav"><a href="#contact" class="link_nav">Contact</a></li>
@@ -45,7 +45,7 @@
             Ut faucibus pulvinar elementum integer enim. Gravida arcu ac tortor dignissim convallis aenean. Semper eget duis at tellus at urna condimentum. Sagittis purus sit amet volutpat consequat mauris nunc congue. Purus sit amet volutpat consequat mauris nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Ut placerat orci nulla pellentesque dignissim enim sit. Ac turpis egestas sed tempus. Adipiscing vitae proin sagittis nisl rhoncus mattis <br> 
             ...    
             </p>
-            <a href="a_propos.html" target="_blank" ><button class="bouton bouton_aPropos">Je veux en savoir plus !</button></a> 
+            <a href="a_propos.html"><button class="bouton bouton_aPropos">Je veux en savoir plus !</button></a> 
             <img src="assets/montagne.png" alt="Dessin de montagnes" id="montagnes">
         </section>
 
@@ -106,9 +106,23 @@
         </section>
 
         <section id="projets" class="section section4">
-            <h2>Projets</h2>
-            <a href="#"><div id="carte_experience"><p>Ana Yoga</p></div></a>
-            <p> Viens voir <a href="https://github.com/BenjaminJedar/Benjamin_Jedar" title="Tu va pas en croire tes yeux ! O.O" target="_blank">mon lien Github</a> !</p>
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <div class="carte_projet">
+                    <h2>Ana Yoga</h2>
+                    <p><i class="fa-solid fa-desktop"></i></p>
+                </div>
+    
+                <div class="carte_projet">
+                    <h2>VivonsNomade</h2>
+                    <p><i class="fa-solid fa-desktop"></i></p>
+                </div>
+    
+                <div class="carte_projet">
+                    <h2>La redac by Ana</h2>
+                    <p><i class="fa-solid fa-desktop"></i></p>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class=" section section5">
@@ -116,12 +130,12 @@
             <p>Envoyez moi un mail pour un premier contact et qu'on discute de votre super projet ou visitez mon profil LinkedIn !</p>   
             <div>
                 <a href="mailto:benjaminjedar-developpeur@hotmail.fr" id="logo_mail"><i class="fa-sharp fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/benjamin-jedar/" target="_blank" id="logo_linkedin"><i class="fa-brands fa-linkedin"></i></a>    
+                <a href="https://www.linkedin.com/in/benjamin-jedar/" target="_blank" id="logo_linkedin"><i class="fa-brands fa-linkedin"></i></a> 
+                <a href="https://github.com/BenjaminJedar" target="_blank"><i class="fa-brands fa-github"></i></a>   
             </div>
          </section>
     </div>
     <footer>    
-        <a href="#accueil"><p class="initiales initiales_footer">BJ</p></a> 
         <p id="copyright"><i class="fa-regular fa-copyright"></i> Copyright 2023 - Benjamin Jedar</p>
     </footer>
 </body>
