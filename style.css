@@ -1,20 +1,19 @@
 /*======================BODY============================*/
 body {
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: column;
     font-size: 20px;
     height: 100%;
     width: 100%;
-    margin-left: auto; 
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0 auto;
     position: relative;  
-    background-color: #2A2F4F;  
-    color: white;
-    /*background: linear-gradient(-25deg,rgba(0, 255, 200, 0.779),rgba(43, 12, 130, 0.89))*/
-    /*background: linear-gradient(rgba(37, 91, 255, 0.632),rgba(255, 119, 0, 0.779))*/
 }
+
+/* couleur primaire : #906C48 (kaki)
+couleur secondaire :#1E2D44 (bleu)
+couleur tertiaire : #DED4CB (ivoire)
+couleur 4 : #AB9486 (gris) */
 
 
 #main {
@@ -25,7 +24,7 @@ body {
 .section {
     display: flex;
     flex-direction: column;
-    padding: 0 20px 0 20px;
+    padding: 0 100px;
 }
 
 a {
@@ -45,17 +44,19 @@ a {
 
 .link_nav {
     text-decoration: none;
+    color: #1E2D44;
     transition: color ease-in-out 200ms;
     font-size: 1.3vw;
     animation: 2.5s linear 0s apparition;
+    margin: 0 25px;
 }
 .link_nav:hover {
-    color: rgba(190, 176, 148, 0.8);
+    color: #906C48;
 }
 
 header {
     z-index: 2;
-    background-color: #2a2f4fec;  
+    background-color: #ded4cbf3;  
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -65,12 +66,27 @@ header {
     height: 100px;
 }
 
-header .initiales {
-    font-weight: bold;
-    font-size: 40px;
+.logo {
+    display: flex;
+    align-items: center;
     margin-left: 20px;
     animation: 2.5s linear 0s apparition;
+    color: #1E2D44;
+}
 
+.img_logo {
+    height: 40px;
+    margin-top: 11px;
+    margin-right: 4px;
+}
+
+.logo .logo_nom {
+    margin-bottom: 0;
+}
+
+.logo .logo_metier {
+    margin-top: 0;
+    font-size: 12px;
 }
 
 
@@ -79,19 +95,16 @@ ul, nav {
     display: flex;
 }
 
-li {
-    margin-right: 20px;
-}
 
 /*======================SECTION ACCUEIL================*/
 .section1 {
     /*background-image: url("assets/montagne_bg.jpg");
     background-size: cover;*/
-    border-radius: 100px;
     height: 710px;   
     flex-direction: row;
     margin-top: 100px;
-    padding: 0;
+    background-color: #DED4CB;   
+    color: #1E2D44;   
     }
 
 .presentation {
@@ -126,9 +139,8 @@ li {
     }
 }
   
-  
 .title {
-    margin-top: 30px;
+    margin-top: 100px;
     margin-left: 50px;
     overflow: hidden;
 }
@@ -136,10 +148,9 @@ li {
 .title_h1 {
     margin-bottom: 0px;
     padding-bottom: 0;
-    font-size: 80px;
+    font-size:60px;
     animation: 2s ease-out 0s slideInFromLeft;
 }
-
 
 .title_h1:hover {
     cursor: default;
@@ -148,7 +159,7 @@ li {
 .title_h2 {
     margin-top: 0px;
     padding-top: 0;
-    font-size: 40px;
+    font-size: 20px;
     animation: 2s ease-out 0s slideInFromRight;
 }
 
@@ -167,9 +178,9 @@ li {
 }
 
 #paragraphe_de_presentation {
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 50px; 
-    margin-top: 100px; 
+    margin-top: 50px; 
     margin-right: 50px;
     padding: 10px;
     animation: 2s ease-out 0s translateEtApparition;
@@ -181,11 +192,11 @@ li {
 
 #photo_profile {
     height: 500px;
-    border-radius: 300px;
-    box-shadow: 2px 2px 20px black;
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
     margin-top: 60px;
     margin-right: 50px;
-    animation: 250ms ease-out 3s rotate;
+    animation: 2s ease-out 0s slideInFromRight;
 }
 
 span {
@@ -193,7 +204,7 @@ span {
 }
 span:hover {
     font-weight: bold;
-    color: rgb(142, 122, 8);
+    color: #906C48;
     transform: rotate(20deg);
 }
 
@@ -203,9 +214,13 @@ span:hover {
 .section2 {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    height: 500px;
+    color: #1E2D44;
 }
 
+.section2 p{
+    font-size: 16px;
+}
 
 .section2 img{
     align-self: center;
@@ -227,6 +242,7 @@ span:hover {
   max-width: 100%;
   padding: 0 25px;
   margin-top: 20px;
+  margin-bottom: 20px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -264,16 +280,13 @@ span:hover {
 }
 
 
-#montagnes {
-    margin-top: 0;
-    width: 50%;
-}
-
 
 /*======================SECTION COMPETENCE================*/
 
 .section3 {
-    height: 390px;
+    padding-top: 20px;
+    height: 450px;
+    background-color: #1E2D44;
 }
 
 .section3 h2{
@@ -284,7 +297,7 @@ span:hover {
 }
 
 .carte{
-    color: black;
+    color: #1E2D44;
     display: flex;
     z-index: 1;
 }
@@ -325,7 +338,7 @@ span:hover {
     background-color: white;
     margin: 10px;
     width: 20%;
-    height: 200px;
+    height: 140px;
     border-radius: 30px;
     padding: 0;
     animation: 4s infinite ease-out 0s carte_translation;
@@ -333,12 +346,12 @@ span:hover {
 }
 
 .carte_techno i{
-    font-size: 5vw;
+    font-size: 3vw;
     margin-bottom: 10px;
 }
 
 .carte_techno_title{
-    font-size: 20px;
+    font-size: 15px;
     padding: 0;
     margin: 0;
 }
@@ -352,12 +365,14 @@ span:hover {
 
 .section4 {
     padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #DED4CB;
+    color: #1E2D44;
 }
 
 .portfolio{
     display: flex;
     justify-content: space-evenly;
-    color: black;
 }
 
 .carte_projet {
@@ -365,9 +380,9 @@ span:hover {
     flex-direction: column;
     align-items: center;
     background-color: white;
+    border: 2px solid black;
     margin: 10px;
     width: 20%;
-    height: 200px;
     border-radius: 30px;
     padding: 0;
 }
@@ -378,6 +393,10 @@ span:hover {
 
 
 /*======================SECTION CONTACT================*/
+
+.section5 {
+    color: #1E2D44;
+}
 
 #poignee{
     margin-left: 10px;
@@ -399,7 +418,7 @@ form {
     width: 500px;
     margin: 20px 0;
     padding: 10px;
-    border: 2px solid black;
+    background-color: #1E2D44;
     border-radius: 20px;
 }
 
@@ -413,21 +432,42 @@ form {
     margin: 0 20px;
 }
 
-.section5 i{
-    font-size: 50px;
-    padding: 0;
-}
-
 
 /*======================FOOTER================*/
 
 footer {
     display: flex;
-    align-self: center;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1E2D44;  
+    color: #DED4CB;
+    height: 150px;
 }
 
-#copyright {
+footer p {
+    font-size: 16px;
+}
+
+.logo_contact {
+    margin-left: 150px;
+}
+
+footer i {
+    color: #DED4CB;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.logo_footer .logo_nom {
+    margin-bottom: 0;
+}
+
+.logo_footer .logo_metier {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.fa-copyright {
     font-size: 14px;
     margin-top: 0;
 }

@@ -7,14 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
     <title>Benjamin Jedar | Developpeur Web Frontend</title>
     <script src="https://kit.fontawesome.com/0e1489d9e9.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <a href="#main" class="link_nav"><p class="initiales">BJ</p></a>
+        <a href="#main" class="logo" >
+            <img src="assets/logoben2.png" class="img_logo">
+            <div class="logo_txt">
+                <p class="logo_nom">Benjamin Jedar</p>
+                <p class="logo_metier">Developpeur Frontend</p>
+            </div>
+        </a>
         <nav>
             <li class="li_nav"><a href="#a_propos" class="link_nav">A propos</a></li>
             <li class="li_nav"><a href="#competence" class="link_nav">Compétences</a></li>
@@ -26,7 +32,7 @@
         <section id="accueil" class="section section1"> 
             <div class="presentation">
                 <div class="title">
-                    <h1 class="title_h1"><span>B</span><span>E</span><span>N</span><span>J</span><span>A</span><span>M</span><span>I</span><span>N</span> <span>J</span><span>E</span><span>D</span><span>A</span><span>R</span></h1>
+                    <h1 class="title_h1"><span>B</span><span>e</span><span>n</span><span>j</span><span>a</span><span>m</span><span>i</span><span>n</span> <span>J</span><span>e</span><span>d</span><span>a</span><span>r   </span></h1>
                     <h2 class="title_h2">DEVELOPPEUR FRONTEND</h2>
                 </div>  
                 <div id="paragraphe_de_presentation">
@@ -46,7 +52,6 @@
             ...    
             </p>
             <a href="a_propos.html"><button class="bouton bouton_aPropos">Je veux en savoir plus !</button></a> 
-            <img src="assets/montagne.png" alt="Dessin de montagnes" id="montagnes">
         </section>
 
         <section id="competence" class="section section3">
@@ -111,16 +116,22 @@
                 <div class="carte_projet">
                     <h2>Ana Yoga</h2>
                     <p><i class="fa-solid fa-desktop"></i></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar mattis.</p>
+                    <button class="bouton">Visiter le site</button>
                 </div>
     
                 <div class="carte_projet">
                     <h2>VivonsNomade</h2>
                     <p><i class="fa-solid fa-desktop"></i></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar mattis.</p>
+                    <button class="bouton">Visiter le site</button>
                 </div>
     
                 <div class="carte_projet">
                     <h2>La redac by Ana</h2>
                     <p><i class="fa-solid fa-desktop"></i></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar mattis.</p>
+                    <button class="bouton">Visiter le site</button>
                 </div>
             </div>
         </section>
@@ -144,15 +155,18 @@
                     </div>
                 </form>
             </div>
-
-            <div>
-                <a href="mailto:benjaminjedar-developpeur@hotmail.fr" id="logo_mail"><i class="fa-sharp fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/benjamin-jedar/" target="_blank" id="logo_linkedin"><i class="fa-brands fa-linkedin"></i></a> 
-                <a href="https://github.com/BenjaminJedar" target="_blank"><i class="fa-brands fa-github"></i></a>   
-            </div>
          </section>
     </div>
     <footer>    
+        <div class="logo_footer">
+            <p class="logo_nom">Benjamin Jedar</p>
+            <p class="logo_metier">Developpeur Frontend</p>
+        </div>
+        <div class="logo_contact">
+            <a href="mailto:benjaminjedar-developpeur@hotmail.fr" id="logo_mail"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/benjamin-jedar/" target="_blank" id="logo_linkedin"><i class="fa-brands fa-linkedin"></i></a> 
+            <a href="https://github.com/BenjaminJedar" target="_blank"><i class="fa-brands fa-github"></i></a>   
+        </div>  
         <p id="copyright"><i class="fa-regular fa-copyright"></i> Copyright 2023 - Benjamin Jedar</p>
     </footer>
 </body>
