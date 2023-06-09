@@ -18,7 +18,6 @@
             <img src="assets/logoben2.png" class="img_logo">
             <div class="logo_txt">
                 <p class="logo_nom">Benjamin Jedar</p>
-                <p class="logo_metier">Developpeur Frontend</p>
             </div>
         </a>
         <nav>
@@ -32,19 +31,19 @@
         <section id="accueil" class="section section1"> 
             <div class="presentation">
                 <div class="title">
-                    <h1 class="title_h1"><span>B</span><span>e</span><span>n</span><span>j</span><span>a</span><span>m</span><span>i</span><span>n</span> <span>J</span><span>e</span><span>d</span><span>a</span><span>r   </span></h1>
-                    <h2 class="title_h2">DEVELOPPEUR FRONTEND</h2>
+                    <h1 class="title_h1"><span>B</span><span>E</span><span>N</span><span>J</span><span>A</span><span>M</span><span>I</span><span>N</span>   <span>J</span><span>E</span><span>D</span><span>A</span><span>R</span></h1>
+                    <h2 class="title_h2">Développeur web frontend</h2>
                 </div>  
                 <div id="paragraphe_de_presentation">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar mattis. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Vitae aliquet nec ullamcorper sit amet. Consectetur a erat nam at lectus urna.
                 </div>                                                                                                                 
             </div>
             <div id="image_de_couverture">
-                <img src="assets/Photo_Profile_Benjamin.JPG" alt="Photo de Benjamin Jedar" id="photo_profile">
+                <img src="assets/Photo_Profile_Benjamin.jpg" alt="Photo de Benjamin Jedar" id="photo_profile">
             </div>
         </section>
 
-        <section id="a_propos" class="section section2">
+        <section id="a_propos" class="section section2">        
             <h2>Je me présente ...</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar mattis. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Vitae aliquet nec ullamcorper sit amet. Consectetur a erat nam at lectus urna. Hac habitasse platea dictumst vestibulum rhoncus. Diam maecenas ultricies mi eget. Feugiat in ante metus dictum at tempor. 
                 
@@ -138,24 +137,23 @@
 
         <section id="contact" class=" section section5">
             <h2>Collaborons ensemble <i class="fa-regular fa-handshake" id="poignee"></i></h3>
-            <p>Envoyez moi un mail pour un premier contact et qu'on discute de votre super projet ou visitez mon profil LinkedIn !</p>  
             <div class="formulaire">
+                <p>Envoyez moi un mail pour qu'on discute de votre super projet ou visitez mon profil LinkedIn !</p>  
                 <form action="/ma-page-de-traitement" method="post">
-                    <div>
-                        <input type="text" id="name" name="user_name" placeholder="Votre nom">
+                    <div class="infos">
+                        <input class="input imput_nom" type="text"  name="user_name" placeholder="Prenom Nom">
+                        <input class="input imput_mail" type="email" name="user_mail" placeholder="Adresse email">
                     </div>
                     <div>
-                        <input type="email" id="mail" name="user_mail" placeholder="email">
+                        <textarea class="input imput_msg" name="user_message" placeholder="Message"></textarea>
                     </div>
-                    <div>
-                        <textarea id="msg" name="user_message" placeholder="Message"></textarea>
-                    </div>
-                    <div>
+                    <div id="btn">
                         <button class="bouton bouton_envoyer">Envoyer</button>
                     </div>
                 </form>
+                <img src="assets/photo_vieux_telephones.jpg" alt="photo_vieux_telephones" id="photo_contact">
             </div>
-         </section>
+        </section>
     </div>
     <footer>    
         <div class="logo_footer">
